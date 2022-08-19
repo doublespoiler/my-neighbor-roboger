@@ -55,10 +55,21 @@ function handleSubmission(event){
   event.preventDefault();
   const userInput = document.getElementById("user-input").value;
   const countArray= countUp(userInput);
-  const beepBoopArray = beepBoop(countArray);
-  console.log(beepBoopArray);
+  const resultArray = beepBoop(countArray).join("... ");
+  console.log(resultArray);
+  const resultDiv = document.getElementById("result-div");
+  const paragraph = document.createElement("p");
+  resultDiv.innerHTML = "";
+  paragraph.append(resultArray);
+  resultDiv.append(paragraph);
 }
 
 function resetForm(event){
   event.preventDefault();
+};
+
+function makeList(array){
+  array.forEach(function(element){
+    
+  });
 };
