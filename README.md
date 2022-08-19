@@ -63,7 +63,8 @@ _{This is a detailed description of your application. Give as much detail as nee
     <blockquote>
       Code:  <br>
       countUp("123");  <br>
-      Expected Result: <br> false <br>
+      Expected Result: <br> 
+      false <br>
     </blockquote>
   </details>
 
@@ -88,32 +89,43 @@ _{This is a detailed description of your application. Give as much detail as nee
     <blockquote>
       Code: <br>
       beepBoop(["3", "0", "1", "2", "3", "0", "2", "1"])<br> 
-      Expected Result: ["Won't you be my neighbor?", "0", "Beep!", "Boop!", "Won't you be my neighbor?" "0", "Boop!", "Beep!"]<br>
+      Expected Result: <br>
+      ["Won't you be my neighbor?", "0", "Beep!", "Boop!", "Won't you be my neighbor?" "0", "Boop!", "Beep!"]<br>
     </blockquote>
     Test 4: "It will console.log() an array made of the element's individual digits if the element is greater than 9."<br> <!--This is the part where I realized I didn't take into account numbers larger than 11 for the rules -->
     <blockquote>
       Code: <br>
       beepBoop(["1234"])<br>
-      Expected Result: ["1", "2", "3", "4"]<br>
+      Expected Result: <br>
+      ["1", "2", "3", "4"]<br>
     </blockquote>
     Test 5: "It will return 'Won't you be my neighbor' to the new array if the element has a 3 and is larger than 9, even if it has a 1 or 2 in it, regardless of position."<br> <!-- This test seems like a large jump, but it is not much code. -->
     <blockquote>
       Code: <br>
       beepBoop(["31", "1", "113"])<br>
-      Expected Result: ["Won't you be my neighbor?", "Beep!", "Won't you be my neighbor?"]<br>
+      Expected Result: <br>
+      ["Won't you be my neighbor?", "Beep!", "Won't you be my neighbor?"]<br>
     </blockquote>
     Test 6: "It will return 'Boop!' to the new array if the element has a 2, but not a 3, and is larger than 9, even if it has a 1 in it, regardless of position."<br> 
     <blockquote>
       Code: <br>
       beepBoop(["23", "1", "112"])<br>
-      Expected Result: ["Won't you be my neighbor?", "Beep!", "Boop!"]<br>
+      Expected Result: <br>
+      ["Won't you be my neighbor?", "Beep!", "Boop!"]<br>
     </blockquote>
     Test 7: "It will return 'Beep!' to the new array if the element is greater than 9, and contains a 1, but not a 2 or 3"
     <blockquote>
       Code: <br> 
       beepBoop(["11", "312", "211", "1", "991"])<br>
       Expected Result: <br>
-      beepBoop(["Beep!", "Won't you be my neighbor?", "Boop!", "Beep!", "Beep!"])<br>
+      ["Beep!", "Won't you be my neighbor?", "Boop!", "Beep!", "Beep!"]<br>
+    </blockquote>
+    Test 2: "It will return the element back to the array if it is greater than 9, and does not have 1, 2 or 3 in it."
+    <blockquote>
+      Code: <br> 
+      beepBoop(["555", "11", "12", "13"])<br>
+      Expected Result: <br>
+      ["555", "Beep!", "Boop!", "Won't you be my neighbor?"]<br>
     </blockquote>
   </details>
 
