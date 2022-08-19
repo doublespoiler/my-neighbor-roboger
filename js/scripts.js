@@ -16,15 +16,16 @@ function countUp(userInputString){
 function beepBoop(inputArray){
   const modifiedArray = [];
     inputArray.forEach(function(element){
-    if(parseInt(element) === 1){
+    if(element === 1){
       modifiedArray.push("Beep!");
     }
-    else if (parseInt(element) === 2){
+    else if (element === 2){
       modifiedArray.push("Boop!");
-    } else if (parseInt(element) === 3){
+    } else if (element === 3){
       modifiedArray.push("Won't you be my neighbor?")
-    } else if (parseInt(element) > 9){
-      const elementAsArray = element.split("");
+    } else if (element > 9){
+      const elementString = element.toString();
+      const elementAsArray = elementString.split("");
       console.log(elementAsArray);
       if (elementAsArray.includes("3")){
         modifiedArray.push("Won't you be my neighbor?");
@@ -53,7 +54,9 @@ window.addEventListener("DOMContentLoaded", function(){
 function handleSubmission(event){
   event.preventDefault();
   const userInput = document.getElementById("user-input").value;
-  countUp(userInput);
+  const countArray= countUp(userInput);
+  const beepBoopArray = beepBoop(countArray);
+  console.log(beepBoopArray);
 }
 
 function resetForm(event){
