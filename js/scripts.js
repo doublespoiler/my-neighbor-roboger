@@ -3,7 +3,7 @@ function countUp(userInputString){
   const userInputArray = userInputString.split("");
   const userInputValue = parseInt(userInputString);
   const countUpArray = [];
-  if (isNaN(userInputString) === true){
+  if (isNaN(userInputString) === true || userInputString.trim() === ""){
     return 0;
   } else { for (i = 0; i < userInputValue + 1; i++){
     countUpArray.push(i);
