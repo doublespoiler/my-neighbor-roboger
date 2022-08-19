@@ -33,21 +33,24 @@ _{This is a detailed description of your application. Give as much detail as nee
 ## Tests
 
 <details>
-
   <summary>Collapse/expand</summary>
-
-
   <details>
-    <summary>Describe countUp()</summary>   
+    <summary>Describe countUp()</summary>
     <blockquote>
       Test 1: "It should return an array of numbers from 0 to the user's inputted number"  <br>
       Code:  <br>
-        countUp(5);  <br>
+        countUp("5");  <br>
       Expected Result: [0, 1, 2, 3, 4, 5]  <br>
-      Test 2: "It should return an array of numbers from 0 to the user's inputted number"  <br>
+      Test 2: "It should return 0 if the input is not fully a number" <br>
+        Plan on if countUp===0 (in handleSumbission) to show error "input is not a number" <br>
       Code:  <br>
-        countUp(5);  <br>
-      Expected Result: [0, 1, 2, 3, 4, 5]  
+        countUp("hello6");  <br>
+      Expected Result: 0  
+      Test 3: "It should return 0 if the input blank" <br>
+        Plan on if countUp===0 (in handleSumbission) to show error "input is not a number" <br>
+      Code:  <br>
+        countUp("      ");  <br>
+      Expected Result: 0  
     </blockquote>
   </details>
   </blockquote>
@@ -68,7 +71,6 @@ _{This is a detailed description of your application. Give as much detail as nee
       Expected Result:
     </blockquote>
   </details>
-
 </details>
 
 
