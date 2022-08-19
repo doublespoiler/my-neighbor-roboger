@@ -11,7 +11,7 @@ function countUp(userInputString){
     console.log(countUpArray);
     return countUpArray;
   }
-}
+};
 
 function beepBoop(inputArray){
   const modifiedArray = [];
@@ -43,18 +43,17 @@ function beepBoop(inputArray){
 }
 
 //UI Logic
-window.addEventListener("load", function(event){
-  event.preventDefault();
-  const submitButton = document.querySelector("form#submit-button");
-  const resetButton = document.querySelector("form#reset-button");
-  const form = document.querySelector("form");
+window.addEventListener("DOMContentLoaded", function(){
+  console.log("loaded");
+  const submitButton = document.getElementById("submit-button");
 
-  form.addEventListener("submit", handleSubmission);
-  form.addEventListener("reset", resetForm)
+  submitButton.addEventListener("click", handleSubmission);
 });
 
 function handleSubmission(event){
   event.preventDefault();
+  const userInput = document.getElementById("user-input").value;
+  countUp(userInput);
 }
 
 function resetForm(event){

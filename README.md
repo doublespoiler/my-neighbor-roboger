@@ -99,7 +99,7 @@ _{This is a detailed description of your application. Give as much detail as nee
       Expected Result: <br>
       ["1", "2", "3", "4"]<br>
     </blockquote>
-    Test 5: "It will return 'Won't you be my neighbor' to the new array if the element has a 3 and is larger than 9, even if it has a 1 or 2 in it, regardless of position."<br> <!-- This test seems like a large jump, but it is not much code. -->
+    Test 5: "It will return 'Won't you be my neighbor' to the new array if the element has a 3 and is larger than 9, even if it has a 1 or 2 in it, regardless of position."<br> 
     <blockquote>
       Code: <br>
       beepBoop(["31", "1", "113"])<br>
@@ -120,23 +120,12 @@ _{This is a detailed description of your application. Give as much detail as nee
       Expected Result: <br>
       ["Beep!", "Won't you be my neighbor?", "Boop!", "Beep!", "Beep!"]<br>
     </blockquote>
-    Test 2: "It will return the element back to the array if it is greater than 9, and does not have 1, 2 or 3 in it."
+    Test 8: "It will return the element back to the array if it is greater than 9, and does not have 1, 2 or 3 in it."
     <blockquote>
       Code: <br> 
       beepBoop(["555", "11", "12", "13"])<br>
       Expected Result: <br>
       ["555", "Beep!", "Boop!", "Won't you be my neighbor?"]<br>
-    </blockquote>
-  </details>
-
-  <details>
-    <summary>Describe countUp()</summary>  
-    Test 2: 
-    <blockquote>
-      Code: <br> 
-      <br>
-      Expected Result: <br>
-      <br>
     </blockquote>
   </details>
 </details>
