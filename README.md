@@ -1,5 +1,7 @@
+
 # My Neighbor Roboger
-#### By Skylan Lew
+
+By Skylan Lew
 
 #### Project 3 - Arrays and Looping
 
@@ -29,6 +31,45 @@ _{This is a detailed description of your application. Give as much detail as nee
   * alternatively, access through [Github Pages https://doublespoiler.github.io/my-neighbor-roboger](https://doublespoiler.github.io/my-neighbor-roboger)
 
 ## Tests
+
+<details>
+
+  <summary>Collapse/expand</summary>
+
+
+  <details>
+    <summary>Describe countUp()</summary>   
+    <blockquote>
+      Test 1: "It should return an array of numbers from 0 to the user's inputted number"  <br>
+      Code:  <br>
+        countUp(5);  <br>
+      Expected Result: [0, 1, 2, 3, 4, 5]  <br>
+      Test 2: "It should return an array of numbers from 0 to the user's inputted number"  <br>
+      Code:  <br>
+        countUp(5);  <br>
+      Expected Result: [0, 1, 2, 3, 4, 5]  
+    </blockquote>
+  </details>
+  </blockquote>
+
+  <details>
+    <summary>Describe replaceNumbers()</summary> 
+    <blockquote>
+      Test 1:  
+      Code:  
+      Expected Result: 
+    </blockquote> 
+  </details>
+  <details>
+    <summary>Describe countUp()</summary>  
+    <blockquote>
+      Test 1:  
+      Code:  
+      Expected Result:
+    </blockquote>
+  </details>
+
+</details>
 
 
 ## Known Bugs
