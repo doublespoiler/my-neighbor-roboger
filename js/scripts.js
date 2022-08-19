@@ -3,11 +3,14 @@ function countUp(userInputString){
   const userInputArray = userInputString.split("");
   const userInputValue = parseInt(userInputString);
   const countUpArray = [];
-  for (i = 0; i < userInputValue + 1; i++){
+  if (isNaN(userInputString) === true){
+    return 0;
+  } else { for (i = 0; i < userInputValue + 1; i++){
     countUpArray.push(i);
   }
-  console.log(countUpArray);
-  return countUpArray;
+    console.log(countUpArray);
+    return countUpArray;
+  }
 }
 
 //UI Logic
