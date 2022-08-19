@@ -28,6 +28,8 @@ function beepBoop(inputArray){
       console.log(elementAsArray);
       if (elementAsArray.includes("3")){
         modifiedArray.push("Won't you be my neighbor?");
+      } else if (elementAsArray.includes("2")){
+        modifiedArray.push("Boop!");
       }
     } else{
       modifiedArray.push(element);
