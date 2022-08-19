@@ -13,6 +13,25 @@ function countUp(userInputString){
   }
 }
 
+<<<<<<< HEAD
+=======
+function beepBoop(inputArray){
+  const modifiedArray = [];
+    inputArray.forEach(function(element){
+    if(element === "1"){  //replace 1 with beep
+      modifiedArray.push("Beep!");
+    }
+    else {   
+      modifiedArray.push(element);
+    }
+  });
+  //replace 2 with boop
+  //replace 3 with won't you be my neighbor
+  //returns new array
+  return modifiedArray;
+}
+
+>>>>>>> 0c808f8 (Make beepBoop() pass test 1..)
 //UI Logic
 window.addEventListener("load", function(event){
   event.preventDefault();
