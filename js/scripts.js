@@ -23,13 +23,15 @@ function beepBoop(inputArray){
       modifiedArray.push("Boop!");
     } else if (parseInt(element) === 3){   //replace 3 with won't you be my neighbor
       modifiedArray.push("Won't you be my neighbor?")
-    } else if (parseInt(element) > 11){
+    } else if (parseInt(element) > 9){
       const elementAsArray = element.split("");
       console.log(elementAsArray);
       if (elementAsArray.includes("3")){
         modifiedArray.push("Won't you be my neighbor?");
       } else if (elementAsArray.includes("2")){
         modifiedArray.push("Boop!");
+      } else if (elementAsArray.includes("1")){
+        modifiedArray.push("Beep!");
       }
     } else{
       modifiedArray.push(element);
