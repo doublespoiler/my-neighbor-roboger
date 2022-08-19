@@ -2,28 +2,49 @@
 <html lang="en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/scripts.js"></script>
   <title>～となりのロボロ～</title>
 </head>
 <body>
-  <div class="container" id="container">
-    <div id="header">
-      <h1>～となりのロボロ～</h1>
-    </div>
-    <div id="content">
-      <div class="row content-row">
-        <form id="count-up-form">
-          <label for="user-input">Input a Number:</label>
-          <input type="number" name="user-input" id="user-input">
-          <button type="button" id="submit-button">Submit</button>
-        </form>
+  <div id="wrapper">
+    <div class="container">
+      <div class="row" id="header">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-body">
+              <h1 class="card-title">～となりのロボロ～</h1>
+              <div class="card-text">
+                <h4>As you enter the old forest, you see an intercom near its entrance. Its shape reminds you of that one kid's animated movie, but you can't remember its name. <br> Instructions are taped to the intercom. They read:</h4>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <h2>Through the radio, you hear:</h2>
-      <div id="result-div"></div>
+      <div id="content">
+        <div class="row content-row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-header">It only responds to numbers.</h3>
+                <div class="card-text">
+                <form id="count-up-form">
+                  <label for="user-input">Pick a number:</label><br>
+                  <input type="number" name="user-input" id="user-input">
+                  <button type="button" id="submit-button">Speak into the intercom</button>
+                </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row content-row">
+          <div id="result-div"></div>
+        </div>
+      </div>
+      <div id="footer"></div>
     </div>
-    <div id="footer"></div>
   </div>
-  
 </body>
 </html>

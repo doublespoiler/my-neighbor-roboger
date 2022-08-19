@@ -59,7 +59,7 @@ function handleSubmission(event){
   console.log(resultArray);
   const resultDiv = document.getElementById("result-div");
   const paragraph = document.createElement("p");
-  resultDiv.innerHTML = "";
+  resultDiv.innerHTML = "<h3>The intercom responds:</h3>";
   paragraph.append(resultArray);
   resultDiv.append(paragraph);
 }

@@ -1,0 +1,16 @@
+.container {
+  background-color:green;
+  width: 800px;
+}
+
+.card {
+  margin-bottom: 1em;
+}
+
+#header {
+  text-align: center;
+}
+
+.content-row {
+  text-align: center;
+}
