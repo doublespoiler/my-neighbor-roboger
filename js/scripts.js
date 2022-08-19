@@ -26,6 +26,9 @@ function beepBoop(inputArray){
     } else if (parseInt(element) > 11){
       const elementAsArray = element.split("");
       console.log(elementAsArray);
+      if (elementAsArray.includes("3")){
+        modifiedArray.push("Won't you be my neighbor?");
+      }
     } else{
       modifiedArray.push(element);
     }
