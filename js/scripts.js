@@ -21,7 +21,9 @@ function beepBoop(inputArray){
     }
     else if (element === "2"){  //replace 2 with boop
       modifiedArray.push("Boop!");
-    } else {   
+    } else if (element === "3"){
+      modifiedArray.push("Won't you be my neighbor?")
+    } else {
       modifiedArray.push(element);
     }
   });

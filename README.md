@@ -96,12 +96,25 @@ _{This is a detailed description of your application. Give as much detail as nee
       beepBoop(["0", "1", "2"]) <br>
       Expected Result: <br>
       ["0", "Beep!", "2"] <br></blockquote>
-    </blockquote>
+      </blockquote>
       Test 2: "It should return an array that is a mirror of the input, but with every '1' replaced with 'Beep!' and every '2' replaced with 'Boop!'"
       <blockquote>Code: <br> 
         beepBoop(["0", "1", "2", "0", "2", "1"]) <br>
         Expected Result: <br>
         ["0", "Beep!", "Boop!", "0", "Boop!", "Beep!"]<br>
+        Test 3: "It should return an array that is a mirror of the input, but with every '1' replaced with 'Beep!', every '2' replaced with 'Boop!' and every 3 replaced with 'Won't you be my neighbor?'"
+        <blockquote>
+        Code: beepBoop(["3", "0", "1", "2", "3", "0", "2", "1"])<br> 
+        <br>
+        Expected Result: ["Won't you be my neighbor?", "0", "Beep!", "Boop!", "Won't you be my neighbor?" "0", "Boop!", "Beep!"]<br>
+        <br>
+        Test 2: 
+      <blockquote>
+        Code: <br> 
+        <br>
+        Expected Result: <br>
+        <br>
+      </blockquote>
       </blockquote>
     </blockquote>
   </details>
