@@ -16,19 +16,20 @@ function countUp(userInputString){
 function beepBoop(inputArray){
   const modifiedArray = [];
     inputArray.forEach(function(element){
-    if(element === "1"){  //replace 1 with beep
+    if(parseInt(element) === 1){  //replace 1 with beep
       modifiedArray.push("Beep!");
     }
-    else if (element === "2"){  //replace 2 with boop
+    else if (parseInt(element) === 2){  //replace 2 with boop
       modifiedArray.push("Boop!");
-    } else if (element === "3"){
+    } else if (parseInt(element) === 3){   //replace 3 with won't you be my neighbor
       modifiedArray.push("Won't you be my neighbor?")
-    } else {
+    } else if (parseInt(element) > 11){
+      const elementAsArray = element.split("");
+      console.log(elementAsArray);
+    } else{
       modifiedArray.push(element);
     }
   });
-  //replace 3 with won't you be my neighbor
-  //returns new array
   return modifiedArray;
 }
 
