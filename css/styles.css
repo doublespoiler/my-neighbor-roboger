@@ -1,11 +1,27 @@
+body {
+  background-color:rgb(5, 20, 1);
+}
+
+.card {
+  margin-bottom: 1em;
+}
+
 .container {
   width: 800px;
   padding-top: 1em;
   background-color: rgba(14, 59, 2, 0.5);
 }
 
-.card {
-  margin-bottom: 1em;
+.content-row {
+  text-align: center;
+}
+
+.hidden{
+  display: none;
+}
+
+.thumbs{
+  width:100px;
 }
 
 #header {
@@ -13,8 +29,9 @@
   margin-top: 1em;
 }
 
-.content-row {
-  text-align: center;
+#result-text{
+  overflow:scroll;
+  max-height: 400px;
 }
 
 #wrapper{
@@ -24,22 +41,4 @@
   background-image: url("../images/background.jpg");
   background-repeat:no-repeat;
   background-size:cover;
-}
-
-
-.hidden{
-  display: none;
-}
-
-#result-text{
-  overflow:scroll;
-  max-height: 400px;
-}
-
-body {
-  background-color:rgb(5, 20, 1);
-}
-
-.thumbs{
-  width:100px;
 }
