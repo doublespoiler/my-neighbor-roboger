@@ -43,9 +43,9 @@ function beepBoop(inputArray){
 
 //UI Logic
 window.addEventListener("DOMContentLoaded", function(){
-  const submitButton = document.getElementById("submit-button");
+  const countUpForm = document.getElementById("count-up-form");
 
-  submitButton.addEventListener("click", handleSubmission);
+  countUpForm.addEventListener("submit", handleSubmission);
 });
 
 function handleSubmission(event){
