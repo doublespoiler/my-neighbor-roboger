@@ -1,4 +1,3 @@
-
 # My Neighbor Roboger
 
 By Skylan Lew
@@ -19,7 +18,7 @@ Takes a user input number, and returns a list counting from 0 to that number, re
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+This program asks the user to input a number, and displays on the screen a "count up" to that number, starting from zero. However, some of the numbers are changed. If a number has a "1" in it, it is changed to "Beep!". If it has a "2" in it, it is changed to "Boop!". If it has a "3" in it, it changes to "Won't you be my neighbor?". However, if a "3" exists, its change will take precedence (regardless if there is a 2 or 1), and "2" will always have precedence over "1." For example, "123" becomes "Won't you be my neighbor?" because the 3 takes precedence.
 
 ## Setup/Installation Requirements
 
@@ -29,6 +28,7 @@ _{This is a detailed description of your application. Give as much detail as nee
   * Navigate to the repository, click the "Code" button, and "Download Zip".  You will need to unzip this folder to a place you can access.
 * open index.html located in the portfolio-main folder in your web browser or IDE/text editor
   * alternatively, access through [Github Pages https://doublespoiler.github.io/my-neighbor-roboger](https://doublespoiler.github.io/my-neighbor-roboger)
+* Type a number (it only takes a number!) into the text box, and press the button.
 
 ## Tests
 
@@ -133,8 +133,7 @@ _{This is a detailed description of your application. Give as much detail as nee
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* None
 
 ## License
 
