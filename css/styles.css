@@ -1,5 +1,5 @@
 body {
-  background-color:rgb(5, 20, 1);
+  background-color: rgb(5, 20, 1);
 }
 
 .card {
@@ -21,7 +21,7 @@ body {
 }
 
 .thumbs{
-  width:100px;
+  width: 100px;
 }
 
 #header {
@@ -30,7 +30,7 @@ body {
 }
 
 #result-text{
-  overflow:scroll;
+  overflow: scroll;
   max-height: 400px;
 }
 
@@ -39,6 +39,6 @@ body {
   min-height: 900px;
   margin: auto;
   background-image: url("../images/background.jpg");
-  background-repeat:no-repeat;
-  background-size:cover;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
