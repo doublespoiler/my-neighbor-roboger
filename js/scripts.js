@@ -57,11 +57,13 @@ function handleSubmission(event){
   const countArray= countUp(userInput);
   const resultArray = beepBoop(countArray).join("... ");
   console.log(resultArray);
-  const resultDiv = document.getElementById("result-div");
+  const resultDiv = document.getElementById("result-div")
+  const resultText = document.getElementById("result-text");
   const paragraph = document.createElement("p");
-  resultDiv.innerHTML = "<h3>The intercom responds:</h3>";
+  resultDiv.className = "card"
+  resultText.innerHTML = "<h3>The intercom responds:</h3>";
   paragraph.append(resultArray);
-  resultDiv.append(paragraph);
+  resultText.append(paragraph);
 }
 
 function resetForm(event){
